@@ -1,0 +1,101 @@
+{
+  "main": {
+    "id": "3a16e3a9cba1a092",
+    "type": "split",
+    "children": [
+      {
+        "id": "34eddc0c345a2555",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Common_concepts/Heap.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "dd8d2e93994ea81f",
+    "type": "split",
+    "children": [
+      {
+        "id": "e995feb0e86d6aa2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a48763ef9bde36ee",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "c1b9d22830c89c35",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "acdaab5e0b09bfa6",
+    "type": "split",
+    "children": [
+      {
+        "id": "9870f9854c942390",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f125115170836eb2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Common_concepts/Heap.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "34eddc0c345a2555",
+  "lastOpenFiles": [
+    "Common_concepts/Heap.md",
+    "Sort_algorithms/Heap_sort.md",
+    "Sort_algorithms/Insertion_sort.md",
+    "Sort_algorithms/Merge_sort.md",
+    "Index.md",
+    "Sort_algorithms/Quick_sort.md",
+    "Sort_algorithms/Untitled.md",
+    "Complexity/Master_theorem.md"
+  ]
+}
