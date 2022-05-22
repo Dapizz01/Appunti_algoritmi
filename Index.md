@@ -18,14 +18,14 @@ C'è sempre una parte di crocette sugli algoritmi di sorting, ma riguardano sola
 **Input**: sequenza $(a_1, a_2, ..., a_n)$ di oggetti su cui è definita una relazione di ordinamento totale (ovvero, tutti gli oggetti sono comparabili fra loro).
 **Output**: permutazione (o riordinamento) degli oggetti in ordine non decrescente.
 
-##### Valutazione degli algoritmi
+##### Caratteristiche degli algoritmi
 
 ^48e514
 
-La valutazione degli algoritmi avviene attraverso 3 parametri:
-* **Complessità temporale**: è il numero di iterazioni massime che può compiere un algoritmo. Per gli algoritmi di sorting, non può essere minore di $\boldsymbol{O(n\log(n))}$.
+Le caratteristiche degli algoritmi sono descritte attraverso 3 parametri:
+* **Complessità temporale**: è il numero di iterazioni massime che può compiere un algoritmo. Per gli algoritmi di sorting, non può essere minore di $\boldsymbol{O(n\log(n))}$ (in media).
 * **Ordinamento in loco**: indica se la complessità spaziale dell'algoritmo è costante oppure no.
-* **Stabilità**: un algoritmo è stabile se l'ordine degli elementi con lo stesso valore non viene alterata
+* **Stabilità**: un algoritmo è stabile se l'ordine degli elementi con lo stesso valore (ordine relativo) non viene alterato.
 
 ##### Algoritmi di sorting
 * [[Insertion_sort#|Insertion sort]]
@@ -34,4 +34,32 @@ La valutazione degli algoritmi avviene attraverso 3 parametri:
 * [[Quick_sort|Quicksort]]
 
 ## Sorting lineare
+Come per [[#Sorting]], ma gli algoritmi lineari di sorting hanno delle limitazioni (da sapere).
 
+##### Algoritmi di sorting lineare
+- [[Counting_sort|Counting sort]]
+- [[Radix_sort|Radix sort]]
+- [[Bucket_sort|Bucket sort]]
+
+## Selezione
+Capitano raramente domande sugli algoritmi di selezione e nel caso, sono riguardo i soliti parametri.
+
+##### Definizione del problema
+**Input**:
+- Array su cui è definita una relazione di ordinamento (ma non è detto che sia ordinato)
+- Indice $i$ compreso tra 1 e $n$, dove $n$ è il numero di elementi nell'array
+**Output**: Valore che, nell'array ordinato, occupa la posizione $i$
+
+##### Limiti sulle complessità
+Gli algoritmi di selezione hanno complessità al massimo $O(n\log(n))$, perchè è la complessità minima degli algoritmi di ordinamento, in cui basta ordinare l'array e restituire l'elemento $i$.
+
+Hanno complessità minima $\Omega(n)$ perchè è necessario controllare ogni elemento dell'array in input.
+
+##### Algoritmi di selezione
+- [[Min_max]]
+- [[Randomized_select]]
+
+## Strutture dati
+## Approcci di programmazione
+## Altre strutture dati
+## Grafi

@@ -1,6 +1,13 @@
 # Heap
-## Descrizione
+## Caratteristiche
+Complessità rimozione radice:  $\boldsymbol{\Theta(1)}$
+Complessità rimozione ultima foglia: $\boldsymbol{\Theta(n)}$
+Complessità sistemazione heap ([[#Heapify da rivedere e aggiungere esempio|heapify]]): $\boldsymbol{\Theta(\log(n))}$
+Complessità aggiunta nodo: $\boldsymbol{O(\log(n))}$ nel caso peggiore
+
+### Descrizione
 Uno heap è un **albero binario semi completo** in cui esiste una **relazione fra** i valori dei nodi **padre e figlio**, tale che il valore della chiave del nodo padre è sempre maggiore (o minore) dei valori delle chiavi dei nodi figli (non c'è ordinamento a pari livello).
+
 I nodi vengono enumerati (e ogni nodo memorizza il proprio ID) dall'alto verso il basso, da sinistra verso destra.
 
 ![Esempio di heap](https://i0.wp.com/sir.unl.edu/portal/bios/Binary-Heap-1b08b627.png)
@@ -18,6 +25,7 @@ In uno heap, ottenere l'elemento più grande (o più piccolo) ha complessità $O
 
 ## Heapify (da rivedere e aggiungere esempio)
 Supponiamo di avere uno max-heap e di eliminare la sua radice, rimpiazzandola con il nodo foglia più a destra. 
+
 Ora la struttura non è più uno heap, come è possibile ottenere nuovamente uno heap?
 Per questo scopo viene usato l'algoritmo heapify.
 
@@ -30,13 +38,13 @@ void heapify(Tree heap, Node i){
 	Node right = i.right;
 	Node largest;
 	// Se il figlio sinistro è nello heap ed ha valore maggiore di i
-	if(left <= heap_size(heap) && l.val > i.val)
+	if(left <= heap.heap_size && l.val > i.val)
 		largest = left;
 	else
 		largest = i;
 	// Se il figlio sinistro è nello heap ed ha valore maggiore del largest
 	// finora trovato
-	if(right <= heap_size(heap) && r.val >= largest.val)
+	if(right <= heap.heap_size && r.val >= largest.val)
 		largest = right;
 	// Se largest non è i
 	if(largest != i){
@@ -53,7 +61,7 @@ void heapify(Tree heap, Node i){
 void remove_max(Tree heap){
 	heap.root.val = heap.last_son.val;
 	// Decrementa heap_size perchè la root viene tolta
-	heap_size(heap)--;
+	heap.heap_size--;
 	heapify(heap, heap.root);
 }
 ````

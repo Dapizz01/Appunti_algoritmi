@@ -1,11 +1,12 @@
 # Merge sort
-## Valutazione
+## Caratteristiche
 Complessità:  $\boldsymbol{\Theta(n\log(n))}$
 Ordina in loco: **NO**
 Stabile: **SI**
 
 #### Descrizione
 Merge sort si basa su divide et impera, ovvero la divisione di un problema grande in più sotto problemi e si presta ad un approccio ricorsivo.
+
 Sostanzialmente, divide il problema fino a trovare tutti i sotto problemi più piccoli (ovvero coppie di numeri). Ordina tali coppie e le coppie ordinate vengono poi usate per ordinare gruppi di 2 coppie e così via, fino a ordinare l'intero array.
 
 #### Codice
@@ -76,7 +77,9 @@ void merge(int array[], int start, int pivot, int end){
 **Complessità**: dato che merge sort è ricorsivo, la sua complessità si può facilmente esprimere con la seguente formula:$$T(n) = T(\frac{n}{2}) + T(\frac{n}{2}) + T(n)$$
 Dove $T(\frac{n}{2})$ sono le chiamate ricorsive, mentre $T(n)$ è il costo della funzione merge.
 Risolvendo l'equazione con il [[Master_theorem|Master Theorem]] si ha che la complessità è $\Theta(n\log(n))$.
+
 **Ordina in loco**: dato che viene usato l'array di supporto, merge sort non ordina in loco.
+
 **Stabile**: l'algoritmo è stabile perchè viene sempre favorito il subarray sinistro in merge, mantenendo l'ordine.
 
 #### Animazione

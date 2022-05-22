@@ -1,5 +1,5 @@
 # Insertion sort
-## Valutazione
+## Caratteristiche
 Complessità:  $\boldsymbol{\Theta(n^2)}$, ma nel caso ottimo si avvicina a $\boldsymbol{O(n)}$
 Ordina in loco: **SI**
 Stabile: **SI**
@@ -37,7 +37,9 @@ void insertion_sort(int array[], int length){
 
 #### Dimostrazioni
 Questo sort ha complessità $1 + 2 + 3 + ... + n = \frac{n(n+1)}{2} \simeq n^2$  nel peggiore dei casi (array ordinato inversamente).
+
 Ordina in loco perchè non usa array di supporto, è necessario solo scambiare le posizioni fra gli elementi dell'array.
+
 E' stabile perchè due elementi con stesso valore non vengono invertiti di posizione (la condizione del `while(...)` è infatti `>` non `>=`).
 
 #### Animazione

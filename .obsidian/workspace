@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Common_concepts/Heap.md",
+            "file": "Index.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Common_concepts/Heap.md",
+                "file": "Index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,13 +89,15 @@
   },
   "active": "34eddc0c345a2555",
   "lastOpenFiles": [
-    "Common_concepts/Heap.md",
-    "Sort_algorithms/Heap_sort.md",
-    "Sort_algorithms/Insertion_sort.md",
-    "Sort_algorithms/Merge_sort.md",
     "Index.md",
+    "Selection_algorithms/Min_max.md",
+    "Linear_sorting/Counting_sort.md",
+    "Linear_sorting/Radix_sort.md",
+    "Linear_sorting/Bucket_sort.md",
+    "Selection_algorithms/Randomized_select.md",
+    "Sort_algorithms/Heap_sort.md",
+    "Common_concepts/Heap.md",
     "Sort_algorithms/Quick_sort.md",
-    "Sort_algorithms/Untitled.md",
-    "Complexity/Master_theorem.md"
+    "Sort_algorithms/Insertion_sort.md"
   ]
 }
