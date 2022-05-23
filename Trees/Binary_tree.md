@@ -16,6 +16,9 @@ E' un albero in cui ogni nodo può avere al massimo due figli, uno destro e uno 
 - Si chiama **altezza dell'albero** il percorso massimo che ha sorgente dalla root verso uno qualsiasi dei suoi figli.
 
 #### Visite
+
+^f4558c
+
 Esistono 3 possibili modi per esplorare un albero binario:
 
 **Pre visit**

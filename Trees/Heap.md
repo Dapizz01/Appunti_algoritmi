@@ -1,6 +1,7 @@
 # Heap
 Usato in:
 - [[Heap_sort|Heap sort]]
+- [[Binomial_heap|Heap binomiali]]
 
 ## Caratteristiche
 Complessità rimozione radice:  $\boldsymbol{\Theta(1)}$

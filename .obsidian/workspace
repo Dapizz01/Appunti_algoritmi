@@ -7,12 +7,8 @@
         "id": "34eddc0c345a2555",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Trees/RB_tree.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "graph",
+          "state": {}
         }
       }
     ],
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Trees/RB_tree.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +84,15 @@
   },
   "active": "34eddc0c345a2555",
   "lastOpenFiles": [
-    "Trees/RB_tree.md",
-    "Trees/Binary_tree.md",
-    "Trees/Binary_search_tree.md",
-    "Sort_algorithms/Merge_sort.md",
-    "Sort_algorithms/Insertion_sort.md",
     "Index.md",
+    "Sort_algorithms/Quick_sort.md",
+    "Sort_algorithms/Heap_sort.md",
+    "Sort_algorithms/Insertion_sort.md",
+    "Sort_algorithms/Merge_sort.md",
+    "Trees/Binary_tree.md",
     "Trees/Heap.md",
-    "Selection_algorithms/Randomized_select.md",
-    "Selection_algorithms/Min_max.md",
-    "Linear_sorting/Counting_sort.md"
+    "Trees/Binomial_heap.md",
+    "Trees/Binomial_tree.md",
+    "Trees/Binary_search_tree.md"
   ]
 }

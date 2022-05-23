@@ -60,6 +60,12 @@ Hanno complessità minima $\Omega(n)$ perchè è necessario controllare ogni ele
 - [[Randomized_select]]
 
 ## Strutture dati
+Ci sono sempre crocette sulle complessità delle strutture dati, e vengono anche usate molto spesso negli esercizi.
+
+#### Strutture dati viste
+- [[RB_tree|RB-alberi]]
+- [[Binomial_heap|Heap binomiali]]
+
 ## Approcci di programmazione
 ## Altre strutture dati
 ## Grafi
