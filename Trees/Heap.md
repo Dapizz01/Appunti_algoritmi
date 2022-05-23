@@ -1,4 +1,7 @@
 # Heap
+Usato in:
+- [[Heap_sort|Heap sort]]
+
 ## Caratteristiche
 Complessità rimozione radice:  $\boldsymbol{\Theta(1)}$
 Complessità rimozione ultima foglia: $\boldsymbol{\Theta(n)}$
@@ -6,7 +9,7 @@ Complessità sistemazione heap ([[#Heapify da rivedere e aggiungere esempio|heap
 Complessità aggiunta nodo: $\boldsymbol{O(\log(n))}$ nel caso peggiore
 
 ### Descrizione
-Uno heap è un **albero binario semi completo** in cui esiste una **relazione fra** i valori dei nodi **padre e figlio**, tale che il valore della chiave del nodo padre è sempre maggiore (o minore) dei valori delle chiavi dei nodi figli (non c'è ordinamento a pari livello).
+Uno heap è un **[[Binary_tree|albero binario]] semi completo** in cui esiste una **relazione fra** i valori dei nodi **padre e figlio**, tale che il valore della chiave del nodo padre è sempre maggiore (o minore) dei valori delle chiavi dei nodi figli (non c'è ordinamento a pari livello).
 
 I nodi vengono enumerati (e ogni nodo memorizza il proprio ID) dall'alto verso il basso, da sinistra verso destra.
 
@@ -15,11 +18,10 @@ I nodi vengono enumerati (e ogni nodo memorizza il proprio ID) dall'alto verso i
 
 #### Termini usati
 - **heap_size** è il numero di nodi dello heap. Notare che heap_size non è sempre pari al numero di nodi dell'albero, perchè uno heap può essere porzione di un albero più grande;
-- Un **nodo foglia** è un nodo dello heap senza figli (perciò intrinsicamente appartenente all'ultimo livello). Notare che i nodi foglia sono al massimo metà di heap_size.
+- I nodi foglia sono al massimo metà di heap_size.
 - Un albero binario è chiamato **semi completo** se tutti i livelli dell'albero hanno il massimo numero di nodi, tranne l'ultimo. L'ultimo livello deve però avere nodi continui da sinistra verso destra.
 - Viene chiamato **min-heap** uno heap in cui il valore della chiave del padre deve essere minore dei valori delle chiavi dei figli.
 - Viene chiamato **max-heap** uno heap in cui il valore della chiave del padre deve essere maggiore dei valori delle chiavi dei figli.
-- L'**altezza di un nodo** è il numero di nodi da attraversare per arrivare ad un certo nodo.
 
 In uno heap, ottenere l'elemento più grande (o più piccolo) ha complessità $O(1)$, cioè costante, mentre prendere l'opposto richiede complessità $O(n)$.
 
