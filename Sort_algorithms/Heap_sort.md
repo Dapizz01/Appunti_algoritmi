@@ -5,7 +5,7 @@ Complessità build_heap: $\boldsymbol{\Theta(n)}$
 Ordina in loco: **SI**
 Stabile: **NO**
 
-#### Descrizione
+## Descrizione
 Lo heap sort si basa sul concetto di [[Heap]]. In particolare, nel considerare un array come uno heap, interpretandolo come di seguito:
 
 ![Rappresentazione di un array come heap](https://www.geeksforgeeks.org/wp-content/uploads/binaryheap.png)
@@ -17,7 +17,7 @@ Poi per ogni elemento dell'array, prende la root dello heap (che è sicuramente 
 
 Infine, usando la funzione [[Heap#Heapify da rivedere e aggiungere esempio|heapify]], sistema lo heap per la prossima iterazione.
 
-#### Codice
+## Codice
 ````c
 // Dato un array, ne costruisce uno heap
 void build_heap(int array[]){
@@ -53,7 +53,7 @@ void heap_sort(int array[]){
 }
 ````
 
-#### Dimostrazioni
+## Dimostrazioni
 La complessità di build_heap è $O(n)$, ma viene chiamato una sola volta da heap_sort.
 Heap sort ha complessità $O(n\log(n))$ perchè chiama $n$ volte heapify, che a sua volta ha complessità $O(\log(n))$.
 
@@ -62,5 +62,5 @@ Ordina in loco perchè non vengono usati array di supporto, tutti gli ordinament
 Non è stabile perchè tutti gli elementi (tranne il primo) vengono swappati con il primo, quindi l'ordine relativo viene invertito (mentre la heapify è stabile).
 
 
-#### Animazione
+## Animazione
 Spiegazione video del [build_heap](https://www.youtube.com/watch?v=WsNQuCa_-PU) e di [heap_sort](https://www.youtube.com/watch?v=_bkow6IykGM).

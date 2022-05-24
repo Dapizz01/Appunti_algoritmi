@@ -5,12 +5,12 @@ Seleziona in loco: **SI**
 Stabile: **SI**
 Condizione: questo algoritmo trova solamente l'elemento minimo e quello massimo (ovvero il primo e l'ultimo elemento dell'array ordinato).
 
-#### Descrizione
+## Descrizione
 Considera come minimo e come massimo il primo valore dell'array, poi controlla tutti i valori dell'array:
 - Se il valore corrente è minore del minimo finora trovato, considero il valore corrente come minimo;
 - Se il valore corrente è maggiore del massimo finora trovato, considero il valore corrente come massimo.
 
-#### Codice
+## Codice
 ````c
 int min_max(int array[]){
 	int min = array[0];

@@ -5,7 +5,7 @@ Ordina in loco: **NO**
 Stabile: **SI**
 Condizione: deve essere noto un limite superiore al valore degli elementi (nell'algoritmo, ```int max```).
 
-#### Descrizione
+## Descrizione
 Counting sort verte sul conoscere in anticipo un limite massimo di valore degli elementi (es: se l'elemento con valore più grande è $n$, allora $max\ge n$ ).
 
 Viene inoltre usato un array di supporto (chiamato d'ora in poi **counter**, così valorizzato:
@@ -19,7 +19,7 @@ Nello stato S invece (terzo ciclo for) counter contiene, per ogni distinto valor
 
 Viene infine usato usato counter per popolare l'array risultante.
 
-#### Codice
+## Codice
 ````c
 void counting_sort(int array_in[], int array_out[], int max){
 	int counter[max];
@@ -53,7 +53,7 @@ void counting_sort(int array_in[], int array_out[], int max){
 	}
 }
 ````
-#### Dimostrazione
+## Dimostrazione
 
-#### Animazione
+## Animazione
 [Counting sort](https://www.youtube.com/watch?v=7zuGmKfUt7s)

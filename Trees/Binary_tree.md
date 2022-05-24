@@ -15,7 +15,7 @@ E' un albero in cui ogni nodo può avere al massimo due figli, uno destro e uno 
 - Si chiamano **nodi foglia** i nodi che non hanno figli;
 - Si chiama **altezza dell'albero** il percorso massimo che ha sorgente dalla root verso uno qualsiasi dei suoi figli.
 
-#### Visite
+## Visite
 
 ^f4558c
 

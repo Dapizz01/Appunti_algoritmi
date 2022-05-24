@@ -9,7 +9,7 @@ Complessità rimozione ultima foglia: $\boldsymbol{\Theta(n)}$
 Complessità sistemazione heap ([[#Heapify da rivedere e aggiungere esempio|heapify]]): $\boldsymbol{\Theta(\log(n))}$
 Complessità aggiunta nodo: $\boldsymbol{O(\log(n))}$ nel caso peggiore
 
-### Descrizione
+## Descrizione
 Uno heap è un **[[Binary_tree|albero binario]] semi completo** in cui esiste una **relazione fra** i valori dei nodi **padre e figlio**, tale che il valore della chiave del nodo padre è sempre maggiore (o minore) dei valori delle chiavi dei nodi figli (non c'è ordinamento a pari livello).
 
 I nodi vengono enumerati (e ogni nodo memorizza il proprio ID) dall'alto verso il basso, da sinistra verso destra.
@@ -71,5 +71,5 @@ void remove_max(Tree heap){
 
 Heapify ha complessità $O(\log(n))$ dove $n$ è il numero di nodi nello heap, in quanto l'algoritmo scende di un livello ad ogni iterazione.
 
-#### Aggiunta di un nodo
+## Aggiunta di un nodo
 L'aggiunta di un nodo nello heap ha complessità $O(\log(n))$ in quanto è possibile che il nuovo nodo non rispetti l'ordinamento dello heap, e che richieda l'uso della [[#Heapify da rivedere e aggiungere esempio|heapify]].

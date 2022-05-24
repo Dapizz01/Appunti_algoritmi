@@ -76,15 +76,15 @@ int randomized_partition(int array[]. int start, int end){
 
 
 #### Dimostrazioni
-Se il pivot è ottimale (ovvero è il mediano degli elementi dell'array) si ottiene l'equazione$$T(n) = 2T(\frac{n}{2}) + n$$
+**Complessità**: Se il pivot è ottimale (ovvero è il mediano degli elementi dell'array) si ottiene l'equazione$$T(n) = 2T(\frac{n}{2}) + n$$
 dove $n$ è il costo della partition, mentre $2T(\frac{n}{2})$ sono le chiamate ricorsive di quick sort sulle due metà. Risolvendo l'equazione con il [[Master_theorem|master theorem]] il risultato è $\Theta(n\log(n))$.
 
 Se invece il pivot è l'elemento più piccolo (o più grande) dell'array, si ottiene l'equazione$$T(n) = n + T(1) + T(n-1)$$
 che ha complessità $\Theta(n^2)$.
 
-Quick sort inoltre ordina in loco perchè non usa array di supporto, ma effettua delle permutazioni sull'array originale.
+**Ordina in loco**: Quick sort ordina in loco perchè non usa array di supporto, ma effettua delle permutazioni sull'array originale.
 
-Quick sort non è stabile perchè l'ordine relativo degli elementi può cambiare se un elemento è scelto come pivot, e anche durante le operazioni in partition.
+**Stabile**: Quick sort non è stabile perchè l'ordine relativo degli elementi può cambiare se un elemento è scelto come pivot, e anche durante le operazioni in partition.
 
 #### Animazione
 [Spiegazione](https://www.youtube.com/watch?v=Hoixgm4-P4M) e [visualizzazione](https://www.youtube.com/watch?v=8hEyhs3OV1w).

@@ -7,8 +7,12 @@
         "id": "34eddc0c345a2555",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Data_structures/Disjoint_set.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Data_structures/Disjoint_set.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,15 +89,15 @@
   },
   "active": "34eddc0c345a2555",
   "lastOpenFiles": [
-    "Index.md",
-    "Sort_algorithms/Quick_sort.md",
-    "Sort_algorithms/Heap_sort.md",
-    "Sort_algorithms/Insertion_sort.md",
-    "Sort_algorithms/Merge_sort.md",
-    "Trees/Binary_tree.md",
+    "Data_structures/Disjoint_set.md",
+    "Images/disjoint_set.png",
+    "Selection_algorithms/Min_max.md",
+    "Linear_sorting/Bucket_sort.md",
+    "Trees/RB_tree.md",
+    "Trees/Interval_tree.md",
     "Trees/Heap.md",
-    "Trees/Binomial_heap.md",
     "Trees/Binomial_tree.md",
-    "Trees/Binary_search_tree.md"
+    "Trees/Binomial_heap.md",
+    "Trees/Binary_tree.md"
   ]
 }

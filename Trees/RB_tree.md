@@ -7,7 +7,7 @@ Complessità costruzione RB-albero da array già ordinato: $\boldsymbol{\Theta(n
 Complessità costruzione RB-albero da array non ordinato: $\boldsymbol{\Theta(n\log(n))}$
 Complessità selezione su RB-albero: $\boldsymbol{\Theta(\log(n))}$
 
-#### Descrizione
+## Descrizione
 Un RB-albero è un [[Binary_search_tree|albero binario di ricerca]] su cui valgono le seguenti proprietà:
 1. Ogni nodo può essere rosso (red) o nero (black);
 2. Ogni nodo foglia è di colore nero;
@@ -23,6 +23,7 @@ Notare che la proprietà 3. viene rispettata usando dei nodi NIL come nodi fogli
 - La **B-altezza** di un nodo X è il numero di nodi neri che si incontrano in un cammino da X ad una foglia, senza contare X;
 - Il **rango** di un nodo è la sua posizione nell'array ordinato composto dai nodi dell'albero (si può calcolare o inserire direttamente nel nodo).
 
+## Operazioni
 #### Rotazione di un sotto albero
 ![Esempio di rotazione](https://i.stack.imgur.com/RVSev.png)
 *Esempio di rotazione*

@@ -5,7 +5,7 @@ Ordina in loco: **NO**
 Stabile: **SI**
 Condizione: deve essere nota la distribuzione di probabilità dei valori in input.
 
-#### Descrizione
+## Descrizione
 Bucket sort sfrutta la distribuzione di probabilità dei valori per dividere i valori in gruppi ("bucket") equiprobabili.
 
 Ogni bucket è una lista concatenata, che contiene i valori appartenenti a quel bucket.

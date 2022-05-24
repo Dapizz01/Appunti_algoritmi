@@ -1,4 +1,4 @@
-## Master Theorem
+# Master Theorem
 Siano $a\ge1$, $b\gt1$ tali che **$$T(n) = aT(\dfrac{n}{b})+f(n)$$**
 allora si hanno 3 casi:
 1. Se $f(n) \in O(n^{\log_{b}(a)-\epsilon})$, con $\epsilon\gt0$, allora $$T(n) \in \Theta(n^{\log_{b}a})$$
