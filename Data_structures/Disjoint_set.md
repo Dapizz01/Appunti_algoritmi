@@ -64,11 +64,12 @@ Chiamando *big* la lista più grande e _small_ la lista più piccola, si ha che 
 Iterando nuovamente si può notare che *small* diventerà al massimo $\frac{1}{4}$ della nuova lista.
 Dato che ad un elemento può essere cambiato il puntatore al massimo $\log(n)$ volte e che viene cambiato il puntatore a rappresentante di tutti gli elementi (almeno la metà), si ha che la complessità è $O(m + n\log(n))$.
 
-### Implementazione con liste ordinate
+### Implementazione con alberi
 Gli insiemi disgiunti sono rappresentati da alberi, in cui la radice è il rappresentante.
 Gli alberi sono esplorati dalle foglie verso la radice (il contrario rispetto agli altri alberi usati finora).
 
-// immagine
+![Esempio di implementazione con alberi e di union fra alberi](Images/tree_disjoint_set.png)
+*Esempio di implementazione con alberi e di unione fra alberi*
 
 #### Complessità
 La complessità delle operazioni è:
@@ -97,7 +98,8 @@ La tecnica di compressione dei cammini riprende il concetto di [[Dynamic_program
 
 Questo consente di non dover passare dagli stessi nodi per più di una volta e di ridurre il costo per arrivare alla radice.
 
-// immagine
+![Esempio di compressione dei cammini](Images/tree_compression.png)
+*Esempio di compressione dei cammini*
 
 **Codice compressione dei cammini**
 ````c

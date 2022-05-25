@@ -10,6 +10,9 @@ Merge sort si basa su divide et impera, ovvero la divisione di un problema grand
 Sostanzialmente, divide il problema fino a trovare tutti i sotto problemi più piccoli (ovvero coppie di numeri).
 Ordina tali coppie e le coppie ordinate vengono poi usate per ordinare gruppi di 2 coppie e così via, fino a ordinare l'intero array.
 
+![Esempio di esecuzione di merge sort](Images/merge_sort_animation.gif)
+*Esempio di esecuzione di merge sort*
+
 ## Codice
 ````c
 // start = indice di partenza del subarray

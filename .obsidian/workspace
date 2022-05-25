@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Data_structures/Disjoint_set.md",
+            "file": "Data_structures/Hash_table.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Data_structures/Disjoint_set.md",
+                "file": "Data_structures/Hash_table.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "34eddc0c345a2555",
   "lastOpenFiles": [
+    "Data_structures/Hash_table.md",
     "Data_structures/Disjoint_set.md",
-    "Images/disjoint_set.png",
-    "Selection_algorithms/Min_max.md",
-    "Linear_sorting/Bucket_sort.md",
-    "Trees/RB_tree.md",
-    "Trees/Interval_tree.md",
     "Trees/Heap.md",
-    "Trees/Binomial_tree.md",
     "Trees/Binomial_heap.md",
-    "Trees/Binary_tree.md"
+    "Trees/Binary_tree.md",
+    "Trees/Binary_search_tree.md",
+    "Linear_sorting/Radix_sort.md",
+    "Linear_sorting/Counting_sort.md",
+    "Linear_sorting/Bucket_sort.md",
+    "Sort_algorithms/Quick_sort.md"
   ]
 }

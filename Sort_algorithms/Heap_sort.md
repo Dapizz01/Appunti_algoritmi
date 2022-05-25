@@ -17,6 +17,9 @@ Poi per ogni elemento dell'array, prende la root dello heap (che è sicuramente 
 
 Infine, usando la funzione [[Heap#Heapify da rivedere e aggiungere esempio|heapify]], sistema lo heap per la prossima iterazione.
 
+![Esempio di applicazione di heap sort](Images/heap_sort_animation.gif)
+*Esempio di applicazione di heap sort*
+
 ## Codice
 ````c
 // Dato un array, ne costruisce uno heap

@@ -12,6 +12,9 @@ Quick sort è un algoritmo Divide ed Impera ricorsivo simile come concetto a [[M
 
 Quick sort, per ogni subarray, individua un pivot e sposta tutti i numeri minori di pivot a sinistra del pivot, e tutti i numeri maggiori a destra del pivot ed esegue la stessa operazione sulla metà sinistra e destra del subarray.
 
+![Esempio di esecuzione di una partition](Images/partition_animation.gif)
+*Esempio di esecuzione di una partition*
+
 #### Codice
 ````c
 void quick_sort(int array[], int start, int end){
