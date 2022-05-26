@@ -87,3 +87,14 @@ Le domande principali vertono sempre sulle complessità.
 - [[Hash_table|Tabelle hash]]
 
 ## Grafi
+E' più che probabile che capitino nelle crocette e anche negli esercizi
+
+#### Argomenti sui grafi
+- [[Introduction|Introduzione ai grafi]]
+- [[BFS|Visita BFS]]
+- [[DFS|Visita DFS]]
+- [[Topological_sort|Ordinamento topologico]]
+- [[Connected_components|Componenti connesse]]
+- [[Minimum_spanning_tree|Albero di copertura di costo minimo]]
+- [[Shortest_path|Cammini minimi a sorgente singola]]
+- [[Multiple_shortest_path|Cammini minimi a sorgente multipla]]
