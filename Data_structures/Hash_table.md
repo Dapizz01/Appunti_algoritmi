@@ -7,7 +7,8 @@ E' una struttura dati che associa ad una chiave un certo valore.
 Non possono esistere oggetti uguali nella tabella.
 Viene usata per l'associazione una funzione $H$ chiamata **funzione di hash**.
 
-// immagine
+![Esempio di tabella hash](Images/hash_table.png)
+*Esempio di tabella hash*
 
 Nelle tabelle hash una chiave viene trasformata nell'indice di un array, che contiene i valori da memorizzare.
 Dato che il numero di chiavi possibili è maggiore del numero di celle dell'array, è possibile che ci siano dei conflitti, ovvero più chiavi diverse che puntano alla stessa cella dell'array.
@@ -22,12 +23,15 @@ Se, per un elemento $x$, la funzione $H(x)$ restituisce l'indice di una cella gi
 - Se viene trovato un elemento $x'$ tale che $x=x'$, termina senza aggiungere $x$;
 - Se non viene trovato un elemento uguale a $x$, $x$ viene aggiunto in coda.
 
-// immagine
+![Esempio di gestione dei conflitti tramite liste](Images/list_hash_table.png)
+*Esempio di gestione dei conflitti tramite liste*
 
 Nel caso peggiore, la tabella hash degenera in una lista, con tempo di accesso $O(n)$, ma in media è $\Theta(1 + \alpha)$, dove $\alpha$ è il numero di nodi nella coda, ovvero **costante**.
 
 #### Indirizzamento aperto
 Nell'inserimento dell'elemento $x$, se $H(x)$ punta a una cella dell'array già usata, scorre l'array finchè non trova una cella libera e mette il contenuto di $x$ in tale cella.
+
+/immagine
 
 Può crearsi un fenomeno di aggregazione su alcune celle dell'array, ovvero alcune celle possono essere puntate molte volte dalla funzione $H$, mentre altre non lo sono mai.
 

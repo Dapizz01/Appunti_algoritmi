@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Graphs/Introduction.md",
+            "file": "README.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Graphs/Introduction.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "34eddc0c345a2555",
   "lastOpenFiles": [
+    "README.md",
+    "Index.md",
+    "Data_structures/Hash_table.md",
     "Graphs/Introduction.md",
     "Sort_algorithms/Insertion_sort.md",
-    "Index.md",
     "Graphs/Topological_sort.md",
     "Graphs/Multiple_shortest_path.md",
     "Graphs/Shortest_path.md",
     "Graphs/Minimum_spanning_tree.md",
-    "Graphs/Connected_components.md",
-    "Graphs/DFS.md",
-    "Graphs/BFS.md"
+    "Graphs/Connected_components.md"
   ]
 }
