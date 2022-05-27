@@ -31,7 +31,8 @@ Nel caso peggiore, la tabella hash degenera in una lista, con tempo di accesso $
 #### Indirizzamento aperto
 Nell'inserimento dell'elemento $x$, se $H(x)$ punta a una cella dell'array già usata, scorre l'array finchè non trova una cella libera e mette il contenuto di $x$ in tale cella.
 
-/immagine
+![Esempio di indirizzamento aperto](Images/open_hash_table.png)
+*Esempio di indirizzamento aperto*
 
 Può crearsi un fenomeno di aggregazione su alcune celle dell'array, ovvero alcune celle possono essere puntate molte volte dalla funzione $H$, mentre altre non lo sono mai.
 

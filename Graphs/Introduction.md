@@ -3,7 +3,8 @@
 Un grafo è un insieme di nodi collegati da archi.
 L'insieme degli archi è chiamato $E$, mentre l'insieme dei nodi è chiamato $V$.
 
-// immagine
+![Esempio di grafo](Images/base_graph.png)
+*Esempio di grafo*
 
 ## Termini usati
 - Un arco può essere *pesato*, ovvero contenere un certo valore;
@@ -14,6 +15,7 @@ L'insieme degli archi è chiamato $E$, mentre l'insieme dei nodi è chiamato $V$
 	- Cammino hamiltoniano, è un cammino che passa da ogni nodo esattamente una volta.
 - I cammini possono essere infiniti, ovvero non avere nè inizio nè fine;
 - Il costo di un cammino è la somma dei costi degli archi attraversati;
+- Un **cammino** si dice **minimo** ($u$, $v$) se è il cammino con costo minore con sorgente $v$ e destinazione $v$.
 - Un grafo è *connesso* se è possibile raggiungere qualsiasi nodo da qualsiasi altro nodo (anche indirettamente);
 - Un grafo è chiamato *ciclico* se contiene dei cammini infiniti, altrimenti viene chiamato *aciclico*;
 - Un **DAG** (Directed Acyclic Graph) è un grafo orientato aciclico;
@@ -29,7 +31,8 @@ Un grafo può essere rappresentato (in un algoritmo) in due modi:
 Viene usato un array in cui ogni cella rappresenta un nodo del grafo ed è la testa di una lista concatenata che contiene i nodi raggiungibili da tale nodo.
 E' la tecnica solitamente usata.
 
-// immagine
+![Esempio di grafo rappresentato con liste di adiacenza](Images/list_graph.png)
+*Esempio di grafo rappresentato con liste di adiacenza*
 
 ###### Complessità operazioni
 - Calcolo del grado uscente di un nodo: $\Theta(V)$;
@@ -40,6 +43,9 @@ E' la tecnica solitamente usata.
 Viene usata una matrice, dove le righe sono i nodi sorgenti degli archi e le colonne i nodi destinazione.
 Dato un cammino $(i, j)$ metto $1$ in ```matrix[i][j]``` se il cammino esiste ($\in E$), altrimenti $0$.
 Occupa sempre $|V^2|$ memoria.
+
+![Esempio di grafo rappresentato attraverso una matrice di adiacenza](Images/table_graph.png)
+*Esempio di grafo rappresentato con una matrice di adiacenza*
 
 ###### Complessità operazioni
 - Calcolo del grado uscente di un nodo: $\Theta(V)$;
