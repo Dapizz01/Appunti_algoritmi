@@ -91,13 +91,13 @@
   "lastOpenFiles": [
     "Graphs/Topological_sort.md",
     "Graphs/Connected_components.md",
+    "Graphs/Minimum_spanning_tree.md",
+    "Graphs/BFS.md",
+    "Data_structures/Disjoint_set.md",
+    "Graphs/DFS.md",
     "Graphs/Introduction.md",
     "Graphs/Shortest_path.md",
-    "Graphs/DFS.md",
-    "Graphs/BFS.md",
     "Sort_algorithms/Heap_sort.md",
-    "Data_structures/Hash_table.md",
-    "README.md",
-    "Index.md"
+    "Data_structures/Hash_table.md"
   ]
 }
