@@ -17,6 +17,8 @@ Ad ogni nodo vengono assegnati degli attributi:
 - Una distanza, che indica il numero di nodi attraversati per arrivare in questo nodo dal nodo di partenza;
 - Un campo $\pi$ (o prev) indica il predecessore di questo nodo nel cammino dalla sorgente a questo nodo.
 
+Non è necessario usare i colori per BFS, servono solo a rendere il codice più leggibile.
+
 Il risultato è un albero con radice il nodo sorgente e che contiene i nodi raggiungibili da essa.
 
 ![Esempio di esecuzione di BFS](Images/bfs.png)
