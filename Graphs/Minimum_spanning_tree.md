@@ -1,5 +1,7 @@
 # Albero di copertura di costo minimo (MST)
 ## Caratteristiche
+Complessità dell'algoritmo di Kruskal: $\boldsymbol{\Theta(V+E\log(E))}$
+Complessità dell'algoritmo di Prim: $\boldsymbol{\Theta((V+E)\log(V))}$ tramite [[Heap|heap]]
 
 ## Descrizione
 Un albero di copertura di costo minimo (MST, Minimum Spanning Tree) è il sottografo del grafo pesato originale, in cui tutti i nodi sono raggiungibili con il costo minimo rispetto a tutti i possibili sottografi.
@@ -21,7 +23,8 @@ Dato un arco sicuro $(u,v)$ esiste un MST che contiene $(u,v)$.
 #### Descrizione
 L'algoritmo di Kruskal prevede di ordinare gli archi per peso crescente e di usare gli [[Disjoint_set|insiemi disgiunti]] per tenere traccia dei nodi già considerati.
 
-// immagine
+![](Images/kruskal.svg)
+*Esempio di esecuzione dell'algoritmo di Kruskal. I nodi di uno stesso colore appartengono allo stesso insieme e l'arco evidenziato in rosso è quello considerato nell'iterazione*
 
 #### Codice
 ````c
@@ -65,7 +68,8 @@ Inizialmente, solo il nodo di partenza è dentro la barriera e tutti i nodi sono
 
 Per ogni nodo viene controllato il valore degli archi dei vicini e vengono aggiornate le distanze, infine viene inglobato nella barriera.
 
-// immagine
+![Esempio di esecuzione dell'algoritmo di Prim](Images/prim.svg)
+*Esempio di esecuzione dell'algoritmo di Prim*
 
 #### Codice
 ````c
