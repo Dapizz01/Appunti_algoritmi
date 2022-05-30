@@ -54,7 +54,8 @@ Esplora il grafo a partire dal nodo di partenza e associa ad ogni nodo una prior
 
 Una volta che l'algoritmo di Dijkstra opera su un nodo, vuol dire che è già stato trovato il cammino minimo per quel nodo.
 
-// esempio
+![Esempio di esecuzione dell'algoritmo di Dijkstra](Images/dijkstra.svg)
+*Esempio di esecuzione dell'algoritmo di Disjkstra*
 
 #### Codice
 ````c
@@ -87,5 +88,57 @@ La coda con priorità può essere implementata con liste (ordinate oppure meno),
 Alcune implementazioni sono migliori nel caso di grafi sparsi, altre nel caso di grafi completi.
 
 ## Algoritmo di Bellman-Ford
+#### Descrizione
+L'algoritmo di Bellman-Ford **si occupa del caso dei cicli negativi**.
+
+L'algoritmo rilassa tutti gli archi $|V|$ volte e ciò garantisce (in assenza di cicli negativi) di trovare tutti i cammini minimi a singola sorgente.
+
+Se dopo aver rilassato gli archi c'è ancora un cammino che può essere rilassato, questo è un ciclo negativo (che può essere rilassato all'infinito) e dunque ritorna un errore, altrimenti termina.
+
+![Esempio di esecuzione dell'algoritmo di Bellman-Ford](Images/bellman_ford.svg)
+*Esempio di esecuzione dell'algoritmo di Bellman-Ford*
+
+#### Codice
+````c
+bool Bellman_Ford(Graph graph, int[][] weights, Node start){
+	init(graph, start);
+	for(int i = 1; i < graph.nodes.count - 1; i++){
+		for(Edge edge : graph){
+			relax(edge.source, edge.dest, weights[edge.source, edge.dest]);
+		}
+	}
+
+	for(Edge edge : graph){
+		int source_dist = edge.source.distance;
+		int dest_dist = edge.dest.distance;
+		if(dest_dist > source_dist + weights[edge.source, edge.dest]);
+			return false;
+	}
+
+	return true;
+}
+````
+#### Complessità
+L'algoritmo di Bellman-Ford ha complessità $\Theta(VE)$ perchè rilassa ogni nodo $|V|$ volte.
 
 ## Algoritmo per grafi aciclici
+#### Descrizione
+L'algoritmo per grafi aciclici usa l'[[Topological_sort|ordinamento topologico]] per ordinare i nodi e per questo non funziona con grafi ciclici (anche positivi).
+
+L'algoritmo ordina topologicamente i nodi e rilassa i vicini di ogni nodo. Quando l'algoritmo itera su un certo nodo, tale nodo è già alla distanza minima.
+
+// immagine
+
+#### Codice
+````c
+void dag_sp(Graph graph, int[][] weights, Node start){
+	topological_sort(graph);
+	for(Node node : graph){
+		for(Node neighbor : node.neighbours){
+			relax(node, neighbor, weights[node][neighbor]);
+		}
+	}
+}
+````
+#### Complessità
+Dato che viene usato topological_sort e che viene rilassato ogni arco del grafo, la complessità dell'algoritmo è $\Theta(V+E)$.

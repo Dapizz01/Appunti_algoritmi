@@ -90,14 +90,14 @@
   "active": "34eddc0c345a2555",
   "lastOpenFiles": [
     "Graphs/Shortest_path.md",
+    "Graphs/Topological_sort.md",
     "Graphs/Minimum_spanning_tree.md",
+    "Graphs/DFS.md",
     "Graphs/BFS.md",
     "Trees/Heap.md",
     "Sort_algorithms/Heap_sort.md",
     "Linear_sorting/Radix_sort.md",
     "Linear_sorting/Bucket_sort.md",
-    "Sort_algorithms/Quick_sort.md",
-    "Trees/Binomial_heap.md",
-    "Graphs/DFS.md"
+    "Sort_algorithms/Quick_sort.md"
   ]
 }
