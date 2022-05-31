@@ -1,5 +1,7 @@
 # Cammini minimi (a sorgente singola)
 ## Caratteristiche
+Complessità Dijkstra: $\boldsymbol{\Theta(V+E+V*(c)+E*(d))}$, dove $c$ è il costo della extract_min e $d$ il costo della reduce_key, **non** applicabile con cicli negativi.
+Complessità Bellman-Ford: $\boldsymbol{\Theta(VE)}$, applicabile anche con cicli negativi.
 
 ## Descrizione
 Il problema dei [[Introduction#Termini usati|cammini minimi]] è la ricerca di tutti i cammini minimi in un grafo da un nodo sorgente a tutte le possibili destinazioni.
