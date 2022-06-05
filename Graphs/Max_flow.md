@@ -7,7 +7,8 @@ Il problema del flusso massimo riguarda la massima quantità di flusso che è po
 
 Una rete di flusso è un grafo composto da archi e nodi, dove ogni arco contiene una capacità massima ed un valore di flusso.
 
-// esempio
+![Esempio di una rete di flusso con un flusso massimo](Images/max_flow.svg)
+*Esempio di una rete di flusso con un flusso massimo, nei riquadri blu sono contenuti i valori dei flussi, in quelli viola quelli della capacità*
 
 La capacità è una funzione $c = V*V \to R^{\ge 0}$ , ed indica la capacità massima di un arco. Se un arco ha capacità $0$ è come se non esistesse.
 
@@ -61,6 +62,9 @@ Ford-Fulkerson non termina nel caso di numeri irrazionali, ma garantisce di trov
 #### Dimostrazione complessità
 Ford-Fulkerson nel peggiore dei casi itera tante volte quante il valore del flusso massimo.
 
-// esempio
+![Esempio di caso pessimo per Ford-Fulkerson](ford_fulkerson_worst_case.svg)
+*Esempio di caso pessimo per Ford-Fulkerson*
+
+// da spiegare
 
 ## Algoritmo di Karp
