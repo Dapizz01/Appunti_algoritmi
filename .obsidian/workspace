@@ -90,14 +90,14 @@
   "active": "34eddc0c345a2555",
   "lastOpenFiles": [
     "Index.md",
+    "Graphs/Max_flow.md",
+    "Graphs/DFS.md",
+    "Programming_methods/Linear_programming.md",
     "Graphs/Multiple_shortest_path.md",
-    "Graphs/Shortest_path.md",
-    "Images/fl.md",
-    "Images/floy_warshall.svg",
-    "Data_structures/Hash_table.md",
+    "Complexity/Master_theorem.md",
     "Data_structures/Disjoint_set.md",
-    "Linear_sorting/Radix_sort.md",
-    "Linear_sorting/Counting_sort.md",
-    "Linear_sorting/Bucket_sort.md"
+    "Graphs/Shortest_path.md",
+    "Trees/Heap.md",
+    "Graphs/BFS.md"
   ]
 }

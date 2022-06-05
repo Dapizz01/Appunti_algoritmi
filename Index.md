@@ -98,4 +98,4 @@ E' più che probabile che capitino nelle crocette e anche negli esercizi
 - [[Minimum_spanning_tree|Albero di copertura di costo minimo]]
 - [[Shortest_path|Cammini minimi a sorgente singola]]
 - [[Multiple_shortest_path|Cammini minimi a sorgente multipla]]
-
+- [[Max_flow|Flusso massimo]]
