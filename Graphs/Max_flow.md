@@ -65,6 +65,14 @@ Ford-Fulkerson nel peggiore dei casi itera tante volte quante il valore del flus
 ![Esempio di caso pessimo per Ford-Fulkerson](ford_fulkerson_worst_case.svg)
 *Esempio di caso pessimo per Ford-Fulkerson*
 
-// da spiegare
+1. Tutti i flussi hanno valore 0.
+2. Si suppone che Ford-Fulkerson trova il cammino aumentante s-a-b-t, ed incrementa di $1$ il flusso (capacità residura dell'arco critico $(a,b)$).
+3. Si suppone che Ford-Fulkeson ora trovi il cammino aumentante s-b-a-t, in cui $f(b,a) = 0-(-1)=1$. Viene quindi aggiunto $1$ al cammino aumentante. Dato che $(a,b)$ ha flusso $1$ e il cammino comprende $(b,a)$, il flusso di $(a,b)$ viene riportato a $0$ (perchè il cammino percorre $(a.b)$ in direzione opposta al verso).
+
+Continuando l'esempio e considerando sempre gli stessi cammini, si avranno sempre cammini aumentanti la cui capacità residua dell'arco critico ($(a,b)$ oppure $(b,a)$) è sempre 1.
+
+L'algoritmo in questo caso itera tante volte quante il valore del flusso finale.
 
 ## Algoritmo di Karp
+L'algoritmo di Karp è una variante dell'[[#Algoritmo di Ford-Fulkerson]] che prevede l'uso di [[BFS]] per esplorare i cammini aumentanti.
+
