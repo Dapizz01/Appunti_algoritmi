@@ -87,7 +87,7 @@ Le domande principali vertono sempre sulle complessità.
 - [[Hash_table|Tabelle hash]]
 
 ## Grafi
-E' più che probabile che capitino nelle crocette e anche negli esercizi
+E' più che probabile che capitino nelle crocette e anche negli esercizi.
 
 #### Argomenti sui grafi
 - [[Introduction|Introduzione ai grafi]]
@@ -99,3 +99,5 @@ E' più che probabile che capitino nelle crocette e anche negli esercizi
 - [[Shortest_path|Cammini minimi a sorgente singola]]
 - [[Multiple_shortest_path|Cammini minimi a sorgente multipla]]
 - [[Max_flow|Flusso massimo]]
+
+// Fare anche grafi bipartiti! Non li spiega a lezione ma ci possono essere all'esame

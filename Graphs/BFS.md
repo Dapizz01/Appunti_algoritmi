@@ -3,7 +3,7 @@
 Complessità: $\boldsymbol{\Theta(V+E)}$
 
 ## Descrizione
-BFS (Breadth-First Search) è un algoritmo di visita dei grafi (ovvero, visita tutti i nodi di un grafo) in larghezza, infatti, a differenza di [[DFS]], esplora prima tutti i vicini diretti, poi tutti i vicini dei vicini e così via.
+BFS (Breadth-First Search) è un algoritmo di visita dei grafi (ovvero, visita tutti i nodi di un grafo) in larghezza. A differenza di [[DFS]], esplora prima tutti i vicini diretti, poi tutti i vicini dei vicini e così via.
 
 BFS lavora sia su grafi orientati che non orientati.
 

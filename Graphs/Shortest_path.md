@@ -1,6 +1,6 @@
 # Cammini minimi (a sorgente singola)
 ## Caratteristiche
-Complessità Dijkstra: $\boldsymbol{\Theta(V+E+V*(c)+E*(d))}$, dove $c$ è il costo della extract_min e $d$ il costo della reduce_key, **non** applicabile con cicli negativi.
+Complessità Dijkstra: $\boldsymbol{\Theta(V\log(V)+E)}$ attraverso heap di fibonacci, **non** applicabile con cicli negativi.
 Complessità Bellman-Ford: $\boldsymbol{\Theta(VE)}$, applicabile anche con cicli negativi.
 
 ## Descrizione

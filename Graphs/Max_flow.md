@@ -1,6 +1,7 @@
 # Flusso massimo
 ## Caratteristiche
-Complessità di Ford-Fulkerson: $\boldsymbol{O(|f^*|(V+E))}$
+Complessità di Ford-Fulkerson: $\boldsymbol{\Theta(|f^*|(V+E))}$
+Complessità di Karp: $\boldsymbol{\Theta(VE(V+E))}$
 
 ## Descrizione
 Il problema del flusso massimo riguarda la massima quantità di flusso che è possibile inviare in una rete di flusso da un nodo $s$ (source) ad un nodo $t$ (target).
@@ -19,13 +20,17 @@ Il flusso è una funzione $f: V*V \to R$, ed indica il flusso presente in un arc
 
 #### Proprietà
 Vigono le seguenti proprietà:
-- Relazione flusso - capacità$$\forall (u,v), f(u,v) \le c(u,v)$$la quantità di flusso deve sempre essere minore della capacità massima;
-- Antisimmetria$$\forall (u,v), f(u,v) = -f(v,u)$$se un arco ha $n$ come quantità di flusso, l'arco opposto ha $-n$ quantità di flusso;
-- Conservazione$$\forall(u \in V - \{s,t\}), \sum\limits_{v} f(u,v) = 0$$la somma dei flussi entranti ed uscenti di un nodo deve sempre essere $0$.
+- **Relazione flusso - capacità**$$\forall (u,v), f(u,v) \le c(u,v)$$la quantità di flusso deve sempre essere minore della capacità massima;
+
+- **Antisimmetria**$$\forall (u,v), f(u,v) = -f(v,u)$$se un arco ha $n$ come quantità di flusso, l'arco opposto ha $-n$ quantità di flusso;
+
+- **Conservazione**$$\forall(u \in V - \{s,t\}), \sum\limits_{v} f(u,v) = 0$$la somma dei flussi entranti ed uscenti di un nodo deve sempre essere $0$.
 
 #### Taglio della rete di flusso
 Un qualsiasi taglio $(U,V)$ tale che $s \in U$ e $t \in V$, in cui $$c(U,V) \triangleq \sum_{u,v} c(u,v)$$ e$$f(U,V) \triangleq \sum_{u,v} f(u,v)$$
 si ha che $f(U,V)$ è sempre la stessa per ogni taglio del grafo, questo grazie alla proprietà di conservazione.
+
+// esempio
 
 #### Capacità residua
 La capacità residua è definita come $c_f(u,v) = c(u,v)-f(u,v)$, mentre la rete residua è la rete formata dalle capacità residue.
@@ -76,3 +81,13 @@ L'algoritmo in questo caso itera tante volte quante il valore del flusso finale.
 ## Algoritmo di Karp
 L'algoritmo di Karp è una variante dell'[[#Algoritmo di Ford-Fulkerson]] che prevede l'uso di [[BFS]] per esplorare i cammini aumentanti.
 
+Viene usato BFS perchè consente di trovare i cammini minimi nella rete di flusso.
+
+Usando Karp, un arco critico $(u,v)$ viene considerato solo una volta, perchè successivamente diventa un arco saturo e non viene esplorato da BFS.
+Può capitare però che venga trovato un cammino aumentante che comprende l'arco $(v,u)$. In tal caso l'arco $(u,v)$ avrà flusso diminuito e potrà nuovamente far parte della rete residua.
+
+Tuttavia affinchè BFS consideri nuovamente l'arco $(u,v)$ deve trovare un altro percorso rispetto a quello fatto prima, e tale percorso ha una distanza di $(u,v)$ sicuramente maggiore del percorso minimo trovato prima, perchè non è minimo.
+
+Tali iterazioni possono avvenire al massimo $V$ volte, perchè la distanza non può aumentare più del numero dei nodi del grafo.
+
+La complessità è di $\Theta(EV(V+E))$.

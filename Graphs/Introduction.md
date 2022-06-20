@@ -15,7 +15,7 @@ L'insieme degli archi è chiamato $E$, mentre l'insieme dei nodi è chiamato $V$
 	- Cammino hamiltoniano, è un cammino che passa da ogni nodo esattamente una volta.
 - I cammini possono essere infiniti, ovvero non avere nè inizio nè fine;
 - Il costo di un cammino è la somma dei costi degli archi attraversati;
-- Un **cammino** si dice **minimo** ($u$, $v$) se è il cammino con costo minore con sorgente $v$ e destinazione $v$.
+- Un **cammino** si dice **minimo** ($u$, $v$) se è il cammino con costo minore con sorgente $u$ e destinazione $v$.
 - Un grafo è *connesso* se è possibile raggiungere qualsiasi nodo da qualsiasi altro nodo (anche indirettamente);
 - Un grafo è chiamato *ciclico* se contiene dei cammini infiniti, altrimenti viene chiamato *aciclico*;
 - Un **DAG** (Directed Acyclic Graph) è un grafo orientato aciclico;
@@ -51,3 +51,14 @@ Occupa sempre $|V^2|$ memoria.
 - Calcolo del grado uscente di un nodo: $\Theta(V)$;
 - Calcolo della somma dei gradi uscenti: $\Theta(V^2)$;
 - Calcolo del grado entrante di un nodo: $\Theta(V)$, pechè basta guardare la colonna del nodo.
+
+## Grafi bipartiti
+Un grafo bipartito è un grafo i cui nodi possono essere divisi in due regioni indipendenti, dove i nodi di ogni regione sono direttamente connessi con solo nodi dell'altra regione.
+
+![Esempio di grafo bipartito](Images/bipartite.svg)
+*Esempio di grafo bipartito*
+
+Per verificare che un grafo è bipartito è sufficente eseguire un algoritmo di visita sul grafo ([[BFS]] o [[DFS]]) marcando ogni nodo come appartenente ad una regione e ogni vicino diretto come appartenente all'altra regione.
+Se durante la visita viene rilevato un conflitto (ovvero, due nodi adiacenti appartengono alla stessa regione), significa che il grafo non è bipartito.
+
+// esempio

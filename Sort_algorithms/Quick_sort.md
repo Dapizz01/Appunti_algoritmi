@@ -3,6 +3,7 @@
 Complessità quick_sort: 
 - Nel caso migliore $\boldsymbol{\Theta(n\log(n))}$
 - Nel caso peggiore $\boldsymbol{\Theta(n^2)}$
+
 Complessità partition: $\boldsymbol{O(n)}$
 Ordina in loco: **SI**
 Stabile: **NO**
