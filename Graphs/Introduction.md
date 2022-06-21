@@ -23,6 +23,10 @@ L'insieme degli archi è chiamato $E$, mentre l'insieme dei nodi è chiamato $V$
 	- Il grado *entrante* è il numero di archi in entrata di tale nodo;
 	- Il grado *uscente* è il numero di archi in uscita di tale nodo.
 - Un grafo è *completo* se ogni nodo è adiacente a qualsiasi altro nodo (in questo caso, $|E| = |V^2|$).
+- La *chiusura transitiva* di un grafo orientato G è un grafo orientato G* che ha gli stessi nodi di G e, se esiste un cammino da $u$ a $v$, contiene un arco diretto da $u$ a $v$
+
+![Esempio di chiusura transitiva di un grafo](Images/transitive_closure.svg)
+*Esempio di chiusura transitiva di un grafo*
 
 ## Rappresentazione di un grafo
 Un grafo può essere rappresentato (in un algoritmo) in due modi:
