@@ -1,6 +1,6 @@
 # Cammini minimi (a sorgente singola)
 ## Caratteristiche
-Complessità Dijkstra: $\boldsymbol{\Theta(V\log(V)+E)}$ attraverso heap di fibonacci, **non** applicabile con cicli negativi.
+Complessità Dijkstra: $\boldsymbol{\Theta(V\log(V)+E)}$ attraverso heap di fibonacci, **non** applicabile con archi negativi.
 Complessità Bellman-Ford: $\boldsymbol{\Theta(VE)}$, applicabile anche con cicli negativi.
 
 ## Descrizione
@@ -50,7 +50,7 @@ void relax(Node mid, Node dest, int weight){
 
 ## Algoritmo di Dijkstra
 #### Descrizione
-L'algoritmo di Dijkstra opera similarmente all'[[Minimum_spanning_tree#Algoritmo di Prim|algoritmo di Prim]] e **non si occupa del caso dei cicli negativi**.
+L'algoritmo di Dijkstra opera similarmente all'[[Minimum_spanning_tree#Algoritmo di Prim|algoritmo di Prim]] e **non si occupa del caso degli archi negativi**.
 
 Esplora il grafo a partire dal nodo di partenza e associa ad ogni nodo una priorità, in base alla distanza con il nodo vicino, ed esplora il nodo con priorità più bassa.
 

@@ -41,7 +41,7 @@ void strongly_cc(Graph graph){
 	
 	// Applica nuovamente DFS sul grafo trasposto controllando
 	// i nodi in ordine di finish_time decrementale
-	DFS(graph, DECREASING_FINISH_TIME);
+	DFS(trasposed, DECREASING_FINISH_TIME);
 }
 ````
 ## Dimostrazione

@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Graphs/Minimum_spanning_tree.md",
-            "mode": "source",
+            "file": "Graphs/Shortest_path.md",
+            "mode": "preview",
             "source": false
           }
         }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Graphs/Minimum_spanning_tree.md",
+                "file": "Graphs/Shortest_path.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -90,14 +90,14 @@
   "active": "34eddc0c345a2555",
   "lastOpenFiles": [
     "Graphs/Minimum_spanning_tree.md",
-    "Graphs/Multiple_shortest_path.md",
     "Graphs/Shortest_path.md",
-    "Graphs/Introduction.md",
-    "Trees/Heap.md",
+    "Graphs/Multiple_shortest_path.md",
+    "Graphs/Max_flow.md",
+    "Graphs/Connected_components.md",
+    "Graphs/Topological_sort.md",
+    "Data_structures/Disjoint_set.md",
+    "Data_structures/Hash_table.md",
     "Trees/RB_tree.md",
-    "Trees/Binary_search_tree.md",
-    "Trees/Binary_tree.md",
-    "Index.md",
-    "Data_structures/Disjoint_set.md"
+    "Trees/Binomial_heap.md"
   ]
 }

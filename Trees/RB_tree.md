@@ -126,5 +126,11 @@ Il problema della selezione su RB-albero ha complessità $\boldsymbol{\Theta(n)}
 
 L'aggiunta del campo del rango non ha ripercussioni sulle complessità delle altre operazioni.
 
-#### Estensioni di strutture dati
-Boh? Lo metto oppure no?
+## Estensione di un RB-albero
+Un RB-albero può essere esteso con uno o più campi aggiuntivi, che possono essere implementati per ridurre la complessità di un algoritmo che riguarda gli RB-alberi.
+
+Tali campi non devono però aumentare il costo delle operazioni di inserimento, estrazione e selezione di nodi dall'RB-albero.
+
+#### Teorema dell'aumento
+Sia $f$ un campo aggiuntivo di un RB-albero. Per ogni nodo $x$, se il valore del campo $f$ di $x$ dipende solamente da $x$ stesso, $x.left$ e $x.right$ allora il campo $f$ non inficia sulla complessità delle operazioni di inserimento, estrazione e selezione di un nodo.
+Il campo $x.f$ può anche dipendere da $x.left.f$ e da $x.right.f$.
